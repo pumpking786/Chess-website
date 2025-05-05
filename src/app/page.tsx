@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Card, CardContent } from "../../components/ui/card";
-import { Instagram, Music, Youtube, Mail, Mic, Twitch } from "lucide-react";
+import { Instagram, Youtube, Mail, Twitch } from "lucide-react";
 import Image from "next/image";
 
 export default function H1ChessProfilePage() {
