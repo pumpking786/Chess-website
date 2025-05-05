@@ -62,26 +62,32 @@ export default function H1ChessProfilePage() {
       {/* Social Icons */}
       <div className="flex gap-4 mb-6">
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/pramit252"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-transform duration-200 hover:-translate-y-1"
         >
           <Instagram className="w-6 h-6 text-black cursor-pointer" />
         </a>
         <a
-          href="https://www.youtube.com"
+          href="https://www.youtube.com/@ChesswithPramit"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-transform duration-200 hover:-translate-y-1"
         >
           <Youtube className="w-6 h-6 text-black cursor-pointer" />
         </a>
-        <a href="mailto:someone@example.com">
+        <a
+          href="mailto:pramitamatya786@gmail.com"
+          className="transition-transform duration-200 hover:-translate-y-1"
+        >
           <Mail className="w-6 h-6 text-black cursor-pointer" />
         </a>
         <a
-          href="https://www.twitch.tv"
+          href="https://www.twitch.tv/chesswithpramit"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-transform duration-200 hover:-translate-y-1"
         >
           <Twitch className="w-6 h-6 text-black cursor-pointer" />
         </a>
