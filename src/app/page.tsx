@@ -95,63 +95,52 @@ export default function H1ChessProfilePage() {
 
       {/* Link Cards */}
       <div className="w-full max-w-md space-y-3 pb-10">
-        <Card>
-          <a
-            href="https://himalayanchess.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <CardContent className="p-3 flex items-center gap-3">
-              <div className="relative w-[60px] h-[60px]">
-                <Image
-                  src="/hca.jpg"
-                  alt="Opening Traps"
-                  fill
-                  className="rounded object-cover"
-                />
-              </div>
-              <span className="text-sm font-medium">
-                Chess Coach at Himalayan Chess Academy
-              </span>
-            </CardContent>
-          </a>
-        </Card>
-
-        <Card>
-          <a
-            href="https://www.youtube.com/@ChesswithPramit"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <CardContent className="p-3 flex items-center gap-3">
-              <div className="relative w-[60px] h-[60px]">
-                <Image
-                  src="/yt.jpg"
-                  alt="Patreon"
-                  fill
-                  className="rounded object-cover"
-                />
-              </div>
-              <span className="text-sm font-medium">
-                Content Creator at ChesswithPramit
-              </span>
-            </CardContent>
-          </a>
-        </Card>
-
-        <Card>
-          <CardContent className="p-3 flex items-center gap-3">
-            <div className="relative w-[60px] h-[60px]">
-              <Image
-                src="/club.png"
-                alt="Chess Club"
-                fill
-                className="rounded object-cover"
-              />
-            </div>
-            <span className="text-sm font-medium">ChesswithPramit CLUB</span>
-          </CardContent>
-        </Card>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
+              href="https://himalayanchess.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/hca.jpg"
+                    alt="Opening Traps"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  Chess Coach at Himalayan Chess Academy (HCA)
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
+              href="https://www.youtube.com/@ChesswithPramit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/yt.jpg"
+                    alt="Patreon"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  Content Creator at ChesswithPramit
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
       </div>
     </div>
   );
