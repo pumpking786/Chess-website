@@ -67,7 +67,7 @@ export default function H1ChessProfilePage() {
           rel="noopener noreferrer"
           className="transition-transform duration-200 hover:-translate-y-1"
         >
-          <Instagram className="w-6 h-6 text-black cursor-pointer" />
+          <Instagram className="w-8 h-8 text-black cursor-pointer" />
         </a>
         <a
           href="https://www.youtube.com/@ChesswithPramit"
@@ -75,13 +75,13 @@ export default function H1ChessProfilePage() {
           rel="noopener noreferrer"
           className="transition-transform duration-200 hover:-translate-y-1"
         >
-          <Youtube className="w-6 h-6 text-black cursor-pointer" />
+          <Youtube className="w-8 h-8 text-black cursor-pointer" />
         </a>
         <a
           href="mailto:pramitamatya786@gmail.com"
           className="transition-transform duration-200 hover:-translate-y-1"
         >
-          <Mail className="w-6 h-6 text-black cursor-pointer" />
+          <Mail className="w-8 h-8 text-black cursor-pointer" />
         </a>
         <a
           href="https://www.twitch.tv/chesswithpramit"
@@ -89,47 +89,59 @@ export default function H1ChessProfilePage() {
           rel="noopener noreferrer"
           className="transition-transform duration-200 hover:-translate-y-1"
         >
-          <Twitch className="w-6 h-6 text-black cursor-pointer" />
+          <Twitch className="w-8 h-8 text-black cursor-pointer" />
         </a>
       </div>
 
       {/* Link Cards */}
       <div className="w-full max-w-md space-y-3 pb-10">
         <Card>
-          <CardContent className="p-3 flex items-center gap-3">
-            <div className="relative w-[50px] h-[50px]">
-              <Image
-                src="/opening.jpg"
-                alt="Opening Traps"
-                fill
-                className="rounded object-cover"
-              />
-            </div>
-            <span className="text-sm font-medium">
-              Opening Traps You Must Learn - Chessable
-            </span>
-          </CardContent>
+          <a
+            href="https://himalayanchess.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CardContent className="p-3 flex items-center gap-3">
+              <div className="relative w-[60px] h-[60px]">
+                <Image
+                  src="/hca.jpg"
+                  alt="Opening Traps"
+                  fill
+                  className="rounded object-cover"
+                />
+              </div>
+              <span className="text-sm font-medium">
+                Chess Coach at Himalayan Chess Academy
+              </span>
+            </CardContent>
+          </a>
+        </Card>
+
+        <Card>
+          <a
+            href="https://www.youtube.com/@ChesswithPramit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <CardContent className="p-3 flex items-center gap-3">
+              <div className="relative w-[60px] h-[60px]">
+                <Image
+                  src="/yt.jpg"
+                  alt="Patreon"
+                  fill
+                  className="rounded object-cover"
+                />
+              </div>
+              <span className="text-sm font-medium">
+                Content Creator at ChesswithPramit
+              </span>
+            </CardContent>
+          </a>
         </Card>
 
         <Card>
           <CardContent className="p-3 flex items-center gap-3">
-            <div className="relative w-[50px] h-[50px]">
-              <Image
-                src="/black.jpg"
-                alt="Patreon"
-                fill
-                className="rounded object-cover"
-              />
-            </div>
-            <span className="text-sm font-medium">
-              Get more from ChesswithPramit
-            </span>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="p-3 flex items-center gap-3">
-            <div className="relative w-[50px] h-[50px]">
+            <div className="relative w-[60px] h-[60px]">
               <Image
                 src="/club.png"
                 alt="Chess Club"
