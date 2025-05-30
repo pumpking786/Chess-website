@@ -213,7 +213,7 @@ export default function H1ChessProfilePage() {
         </div>
       </div>
 
-      {/* Profile Section */}
+      {/* Profile Sections*/}
       <div className="pt-0 flex flex-col items-center text-center">
         <div className="relative w-30 h-30 rounded-full overflow-hidden mb-4">
           <Image
