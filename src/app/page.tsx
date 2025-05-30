@@ -15,8 +15,8 @@ const ShareModal = ({
   onClose: () => void;
   linktreeUrl: string;
 }) => {
-  if (!isOpen) return null;
   const [isCopied, setIsCopied] = useState(false);
+  if (!isOpen) return null;
   const shareOptions = [
     {
       name: "X",
