@@ -1,11 +1,178 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Card, CardContent } from "../../components/ui/card";
 import { Instagram, Youtube, Mail, Twitch } from "lucide-react";
 import Image from "next/image";
 
+// Share Modal Component with TypeScript typing
+const ShareModal = ({
+  isOpen,
+  onClose,
+  linktreeUrl,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  linktreeUrl: string;
+}) => {
+  if (!isOpen) return null;
+  const [isCopied, setIsCopied] = useState(false);
+  const shareOptions = [
+    {
+      name: "X",
+      icon: "/x.jpg",
+      url: `https://x.com/intent/tweet?url=${linktreeUrl}`,
+    },
+    {
+      name: "Facebook",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+      url: `https://www.facebook.com/sharer/sharer.php?u=${linktreeUrl}`,
+    },
+    {
+      name: "WhatsApp",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+      url: `https://api.whatsapp.com/send?text=${linktreeUrl}`,
+    },
+    {
+      name: "LinkedIn",
+      icon: "/linkedin.png",
+      url: `https://www.linkedin.com/shareArticle?url=${linktreeUrl}`,
+    },
+    {
+      name: "Messenger",
+      icon: "https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg",
+      url: `https://www.facebook.com/messages/t/?u=${linktreeUrl}`,
+    },
+    {
+      name: "Snapchat",
+      icon: "/snap.jpg",
+      url: `https://www.snapchat.com/share?url=${linktreeUrl}`,
+    },
+  ];
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(linktreeUrl);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 3000); // Hide after 3 seconds
+  };
+
+  return (
+    <div>
+      <div
+        className="fixed inset-0 bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center z-50"
+        onClick={onClose}
+      >
+        <div
+          className="bg-white rounded-lg p-6 w-full max-w-sm relative"
+          onClick={(e) => e.stopPropagation()} // Prevent clicks inside the modal from closing it
+        >
+          <button
+            onClick={onClose}
+            className="absolute top-2 right-2 text-gray-600 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+          <h2 className="text-lg font-semibold mb-4 text-center">
+            Share with your friends
+          </h2>
+
+          {/* Linktree Profile Card */}
+          <div className="bg-gray-800 text-white rounded-lg p-4 mb-4 flex flex-col items-center">
+            <div className="relative w-20 h-20 rounded-full overflow-hidden mb-2">
+              <Image
+                src="/profile.png" // Replace with the actual profile image path
+                alt="ChesswithPramit"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-bold">ChesswithPramit</h3>
+            <p className="text-sm">*/#ChesswithPramit</p>
+          </div>
+
+          {/* Share Options */}
+          <div className="flex flex-wrap gap-4 justify-center mb-4">
+            {shareOptions.map((option) => (
+              <a
+                key={option.name}
+                href={option.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center"
+              >
+                <div className="w-10 h-10 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center">
+                  <Image
+                    src={option.icon}
+                    alt={option.name}
+                    width={30}
+                    height={30}
+                  />
+                </div>
+                <span className="text-sm mt-1">{option.name}</span>
+              </a>
+            ))}
+          </div>
+
+          {/* Copy Linktree Button */}
+          <div className="relative">
+            <button
+              onClick={copyToClipboard}
+              className="cursor-pointer w-full py-2 mb-4 border border-gray-300 rounded-full flex items-center justify-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                />
+              </svg>
+              Copy link
+            </button>
+            {isCopied && (
+              <span className="absolute bottom-14 left-1/2 -translate-x-1/2 text-lm bg-black text-white py-1 px-2 rounded opacity-100 transition duration-300">
+                Link copied!
+              </span>
+            )}
+          </div>
+
+          {/* Promotional Text */}
+          <div className="text-center">
+            <p className="text-sm font-semibold">Join ChesswithPramit</p>
+            {/* <p className="text-xs text-gray-600">
+            Get your own free Linktree. The only link in bio trusted by 70M+
+            people.
+          </p> */}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default function H1ChessProfilePage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const linktreeUrl: string = "https://chess-website-two.vercel.app/"; // Updated to the new URL
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-100 to-neutral-200 flex flex-col items-center px-4 relative overflow-x-hidden">
       {/* Top Icons - Centered Container */}
@@ -27,7 +194,10 @@ export default function H1ChessProfilePage() {
           </svg>
         </div>
 
-        <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md">
+        <div
+          className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer"
+          onClick={() => setIsModalOpen(true)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-gray-800"
@@ -48,7 +218,7 @@ export default function H1ChessProfilePage() {
         <div className="relative w-30 h-30 rounded-full overflow-hidden mb-4">
           <Image
             src="/profile.png"
-            alt="H1Chess"
+            alt="ChesswithPramit"
             fill
             className="object-cover"
           />
@@ -67,7 +237,6 @@ export default function H1ChessProfilePage() {
             href="https://www.instagram.com/pramit252"
             target="_blank"
             rel="noopener noreferrer"
-            // className="transition-transform duration-200 hover:-translate-y-1"
           >
             <Instagram className="w-8 h-8 text-black cursor-pointer transform transition-transform duration-200 group-hover:-translate-y-1" />
           </a>
@@ -82,7 +251,6 @@ export default function H1ChessProfilePage() {
             href="https://www.youtube.com/@ChesswithPramit"
             target="_blank"
             rel="noopener noreferrer"
-            // className="transition-transform duration-200 hover:-translate-y-1"
           >
             <Youtube className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
           </a>
@@ -97,7 +265,6 @@ export default function H1ChessProfilePage() {
             href="mailto:pramitamatya786@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            // className="transition-transform duration-200 hover:-translate-y-1"
           >
             <Mail className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
           </a>
@@ -112,7 +279,6 @@ export default function H1ChessProfilePage() {
             href="https://www.twitch.tv/chesswithpramit"
             target="_blank"
             rel="noopener noreferrer"
-            // className="transition-transform duration-200 hover:-translate-y-1"
           >
             <Twitch className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
           </a>
@@ -194,6 +360,13 @@ export default function H1ChessProfilePage() {
           </Card>
         </div>
       </div>
+
+      {/* Share Modal */}
+      <ShareModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        linktreeUrl={linktreeUrl}
+      />
     </div>
   );
 }
