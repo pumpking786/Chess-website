@@ -53,44 +53,73 @@ export default function H1ChessProfilePage() {
             className="object-cover"
           />
         </div>
-        <h1 className="text-2xl font-bold">ChesswithPramit</h1>
-        <p className="text-gray-600 mb-4 text-sm">
-          I Teach Chess On The Internet.
+        <h1 className="text-3xl font-bold mb-2">ChesswithPramit</h1>
+        <p className="text-gray-600 mb-4 text-lm italic">
+          I Teach Chess Online and On The Internet.
         </p>
       </div>
 
       {/* Social Icons */}
-      <div className="flex gap-4 mb-6">
-        <a
-          href="https://www.instagram.com/pramit252"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-transform duration-200 hover:-translate-y-1"
-        >
-          <Instagram className="w-8 h-8 text-black cursor-pointer" />
-        </a>
-        <a
-          href="https://www.youtube.com/@ChesswithPramit"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-transform duration-200 hover:-translate-y-1"
-        >
-          <Youtube className="w-8 h-8 text-black cursor-pointer" />
-        </a>
-        <a
-          href="mailto:pramitamatya786@gmail.com"
-          className="transition-transform duration-200 hover:-translate-y-1"
-        >
-          <Mail className="w-8 h-8 text-black cursor-pointer" />
-        </a>
-        <a
-          href="https://www.twitch.tv/chesswithpramit"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-transform duration-200 hover:-translate-y-1"
-        >
-          <Twitch className="w-8 h-8 text-black cursor-pointer" />
-        </a>
+      <div className="flex gap-6 mb-6">
+        {/* Instagram */}
+        <div className="relative group inline-block">
+          <a
+            href="https://www.instagram.com/pramit252"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="transition-transform duration-200 hover:-translate-y-1"
+          >
+            <Instagram className="w-8 h-8 text-black cursor-pointer transform transition-transform duration-200 group-hover:-translate-y-1" />
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            Instagram
+          </span>
+        </div>
+
+        {/* YouTube */}
+        <div className="relative group inline-block">
+          <a
+            href="https://www.youtube.com/@ChesswithPramit"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="transition-transform duration-200 hover:-translate-y-1"
+          >
+            <Youtube className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            YouTube
+          </span>
+        </div>
+
+        {/* Email */}
+        <div className="relative group inline-block">
+          <a
+            href="mailto:pramitamatya786@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="transition-transform duration-200 hover:-translate-y-1"
+          >
+            <Mail className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            Email
+          </span>
+        </div>
+
+        {/* Twitch */}
+        <div className="relative group inline-block">
+          <a
+            href="https://www.twitch.tv/chesswithpramit"
+            target="_blank"
+            rel="noopener noreferrer"
+            // className="transition-transform duration-200 hover:-translate-y-1"
+          >
+            <Twitch className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1" />
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            Twitch
+          </span>
+        </div>
       </div>
 
       {/* Link Cards */}
