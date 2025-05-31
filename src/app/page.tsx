@@ -48,6 +48,11 @@ const ShareModal = ({
       icon: "/snap.jpg",
       url: `snapchat://send?text=${encodeURIComponent(linktreeUrl)}`,
     },
+    {
+      name: "Viber",
+      icon: "/viber.png", // Use a valid icon path or URL
+      url: `viber://forward?text=${encodeURIComponent(linktreeUrl)}`,
+    },
   ];
 
   const copyToClipboard = () => {
