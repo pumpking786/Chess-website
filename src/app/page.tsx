@@ -41,7 +41,7 @@ const ShareModal = ({
     {
       name: "Messenger",
       icon: "https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg",
-      url: `https://www.facebook.com/messages/t/?u=${linktreeUrl}`,
+      url: `fb-messenger://share?link=${encodeURIComponent(linktreeUrl)}`,
     },
     {
       name: "Snapchat",
