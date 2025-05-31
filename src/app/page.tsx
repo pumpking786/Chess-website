@@ -46,7 +46,7 @@ const ShareModal = ({
     {
       name: "Snapchat",
       icon: "/snap.jpg",
-      url: `https://www.snapchat.com/share?url=${linktreeUrl}`,
+      url: `snapchat://send?text=${encodeURIComponent(linktreeUrl)}`,
     },
   ];
 
