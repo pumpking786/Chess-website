@@ -291,6 +291,45 @@ export default function H1ChessProfilePage() {
             Twitch
           </span>
         </div>
+        {/* X (Twitter) */}
+        <div className="relative group inline-block">
+          <a
+            href="https://x.com/AmatyaPramit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              className="w-8 h-8 text-black fill-current cursor-pointer transition-transform duration-200 hover:-translate-y-1"
+              viewBox="0 -2 24 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M14.753 10.408L23.25 0h-2.115l-7.547 8.93L7.6 0H0l9.024 13.03L0 24h2.115l8.029-9.497L16.4 24H24l-9.247-13.592z" />
+            </svg>
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            X
+          </span>
+        </div>
+
+        {/* TikTok */}
+        <div className="relative group inline-block">
+          <a
+            href="https://www.tiktok.com/@pramit252"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              className="w-8 h-8 text-black cursor-pointer transition-transform duration-200 hover:-translate-y-1 fill-current"
+              viewBox="0 0 24 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12.75 0h4.5a6.75 6.75 0 0 0 6.75 6.75v4.5a11.25 11.25 0 0 1-6.75-2.25v9.75a7.5 7.5 0 1 1-7.5-7.5v4.5a3 3 0 1 0 3 3V0z" />
+            </svg>
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            TikTok
+          </span>
+        </div>
       </div>
 
       {/* Link Cards */}
