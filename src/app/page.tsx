@@ -374,7 +374,8 @@ export default function H1ChessProfilePage() {
                   />
                 </div>
                 <span className="text-lg italic font-medium">
-                  Chess Coach at Himalayan Chess Academy (HCA)
+                  Chess Coach at Himalayan Chess Academy (HCA) &ensp;{" "}
+                  <strong>20% OFF</strong>
                 </span>
               </CardContent>
             </a>
