@@ -398,7 +398,53 @@ export default function H1ChessProfilePage() {
                   />
                 </div>
                 <span className="text-lg italic font-medium">
-                  Content Creator at ChesswithPramit
+                  ChesswithPramit
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
+              href="https://www.chess.com/club/the-kingdom-of-chesswithpramit-by-pumpking"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/kingdom.png"
+                    alt="Patreon"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  PumpKingDom Chess.com Club
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
+              href="https://drive.google.com/file/d/1FUTHCwbMWGkJlce_oo9dLf-tTHtG0Ord/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/uparrow.png"
+                    alt="Patreon"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  Ways to Improve Chess
                 </span>
               </CardContent>
             </a>
