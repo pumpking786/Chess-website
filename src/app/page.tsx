@@ -365,7 +365,7 @@ export default function H1ChessProfilePage() {
               rel="noopener noreferrer"
             >
               <CardContent className="p-3 flex items-center gap-3">
-                <div className="relative w-[60px] h-[60px]">
+                <div className="relative w-[60px] h-[60px] flex-shrink-0">
                   <Image
                     src="/hca.jpg"
                     alt="Opening Traps"
