@@ -239,7 +239,7 @@ export default function H1ChessProfilePage() {
         {/* Instagram */}
         <div className="relative group inline-block">
           <a
-            href="https://www.instagram.com/pramit252"
+            href="https://www.instagram.com/flexfee1ings/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -314,7 +314,7 @@ export default function H1ChessProfilePage() {
         {/* TikTok */}
         <div className="relative group inline-block">
           <a
-            href="https://www.tiktok.com/@pramit252"
+            href="https://www.tiktok.com/@userhasattachmentissues_"
             target="_blank"
             rel="noopener noreferrer"
           >
