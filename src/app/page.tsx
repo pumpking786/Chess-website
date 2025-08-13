@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Card, CardContent } from "../../components/ui/card";
-import { Instagram, Youtube, Mail, Twitch } from "lucide-react";
+import { Instagram, Youtube, Mail, Twitch, Facebook } from "lucide-react";
 import Image from "next/image";
 
 // Share Modal Component with TypeScript typing
@@ -239,7 +239,7 @@ export default function H1ChessProfilePage() {
         {/* Instagram */}
         <div className="relative group inline-block">
           <a
-            href="https://www.instagram.com/flexfee1ings/"
+            href="https://www.instagram.com/uneed1t/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -261,6 +261,19 @@ export default function H1ChessProfilePage() {
           </a>
           <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
             YouTube
+          </span>
+        </div>
+        {/* Facebook */}
+        <div className="relative group inline-block">
+          <a
+            href="https://www.facebook.com/profile.php?id=61555977617470"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook className="w-8 h-8 text-black cursor-pointer transform transition-transform duration-200 group-hover:-translate-y-1" />
+          </a>
+          <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
+            Facebook
           </span>
         </div>
 
@@ -312,7 +325,7 @@ export default function H1ChessProfilePage() {
         </div>
 
         {/* TikTok */}
-        <div className="relative group inline-block">
+        {/* <div className="relative group inline-block">
           <a
             href="https://www.tiktok.com/@userhasattachmentissues_"
             target="_blank"
@@ -329,7 +342,7 @@ export default function H1ChessProfilePage() {
           <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
             TikTok
           </span>
-        </div>
+        </div> */}
       </div>
 
       {/* Link Cards */}
