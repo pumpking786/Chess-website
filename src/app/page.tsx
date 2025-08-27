@@ -397,6 +397,29 @@ export default function H1ChessProfilePage() {
         <div className="block transition-transform duration-200 hover:-translate-y-1">
           <Card>
             <a
+              href="https://discord.gg/HuhBVTrKz7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px] flex-shrink-0">
+                  <Image
+                    src="/discord.png"
+                    alt="Opening Traps"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  Click here to join discord
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
               href="https://www.youtube.com/@ChesswithPramit"
               target="_blank"
               rel="noopener noreferrer"
