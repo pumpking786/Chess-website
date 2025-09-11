@@ -350,6 +350,29 @@ export default function H1ChessProfilePage() {
         <div className="block transition-transform duration-200 hover:-translate-y-1">
           <Card>
             <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdTA57zkiEjLi1XvygMrvdO0hVRRpKk8sc56zaEBK8sPd0oJg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/pawn.jpeg"
+                    alt="Patreon"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  <b>Join My Chess Classes</b>
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
               href="https://www.pramitamatya.com.np/"
               target="_blank"
               rel="noopener noreferrer"
@@ -364,12 +387,13 @@ export default function H1ChessProfilePage() {
                   />
                 </div>
                 <span className="text-lg italic font-medium">
-                  <b>Pramit Amatya Official Website</b>
+                  Pramit Amatya Official Website
                 </span>
               </CardContent>
             </a>
           </Card>
         </div>
+
         <div className="block transition-transform duration-200 hover:-translate-y-1">
           <Card>
             <a
