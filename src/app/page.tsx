@@ -90,7 +90,7 @@ const ShareModal = ({
               />
             </svg>
           </button>
-          <h2 className="text-lg font-semibold mb-4 text-center">
+          <h2 className="text-[20px] font-semibold mb-4 text-center">
             Share with your friends
           </h2>
 
@@ -388,7 +388,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
+                <span className="text-gray-600">
                   Pramit Amatya Official Website
                 </span>
               </CardContent>
@@ -412,7 +412,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
+                <span className="text-gray-600">
                   Chess Coach at Himalayan Chess Academy (HCA) &ensp;{" "}
                   <strong>20% OFF</strong>
                 </span>
@@ -436,7 +436,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
+                <span className="text-gray-600">
                   Click here to join discord
                 </span>
               </CardContent>
@@ -459,9 +459,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
-                  ChesswithPramit
-                </span>
+                <span className="text-gray-600">ChesswithPramit</span>
               </CardContent>
             </a>
           </Card>
@@ -482,7 +480,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
+                <span className="text-gray-600">
                   PumpKingDom Chess.com Club
                 </span>
               </CardContent>
@@ -505,9 +503,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg italic font-medium">
-                  Ways to Improve Chess
-                </span>
+                <span className="text-gray-600">Ways to Improve Chess</span>
               </CardContent>
             </a>
           </Card>
