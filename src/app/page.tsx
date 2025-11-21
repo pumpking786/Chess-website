@@ -365,7 +365,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-lg">
+                <span className="text-gray-600">
                   <b>Join My Chess Classes</b>
                 </span>
               </CardContent>
