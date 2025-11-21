@@ -64,7 +64,8 @@ const ShareModal = ({
   return (
     <div>
       <div
-        className="fixed inset-0 bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center z-50"
+        // In your main div, replace the background class:
+        className="min-h-screen bg-white flex flex-col items-center px-4 relative overflow-x-hidden"
         onClick={onClose}
       >
         <div
