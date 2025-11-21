@@ -90,8 +90,8 @@ const ShareModal = ({
               />
             </svg>
           </button>
-          <h2 className="text-gray-900 text-[20px] mb-4 text-center">
-            <strong>Share with your friends</strong>
+          <h2 className="text-lg font-semibold mb-4 text-center">
+            Share with your friends
           </h2>
 
           {/* Linktree Profile Card */}
@@ -126,7 +126,7 @@ const ShareModal = ({
                     height={30}
                   />
                 </div>
-                <span className="text-gray-800">{option.name}</span>
+                <span className="text-sm mt-1">{option.name}</span>
               </a>
             ))}
           </div>
@@ -228,9 +228,7 @@ export default function H1ChessProfilePage() {
             className="object-cover"
           />
         </div>
-        <h1 className="text-gray-600 mb-4 text-[30px] ">
-          <strong>ChesswithPramit</strong>
-        </h1>
+        <h1 className="text-3xl font-bold mb-2">ChesswithPramit</h1>
         <p className="text-gray-600 mb-4 text-lm italic">
           I Teach Chess Online and On The Internet.
         </p>
@@ -365,7 +363,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">
+                <span className="text-lg italic font-medium">
                   <b>Join My Chess Classes</b>
                 </span>
               </CardContent>
@@ -388,7 +386,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">
+                <span className="text-lg italic font-medium">
                   Pramit Amatya Official Website
                 </span>
               </CardContent>
@@ -412,7 +410,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">
+                <span className="text-lg italic font-medium">
                   Chess Coach at Himalayan Chess Academy (HCA) &ensp;{" "}
                   <strong>20% OFF</strong>
                 </span>
@@ -436,7 +434,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">
+                <span className="text-lg italic font-medium">
                   Click here to join discord
                 </span>
               </CardContent>
@@ -459,7 +457,9 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">ChesswithPramit</span>
+                <span className="text-lg italic font-medium">
+                  ChesswithPramit
+                </span>
               </CardContent>
             </a>
           </Card>
@@ -480,7 +480,7 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">
+                <span className="text-lg italic font-medium">
                   PumpKingDom Chess.com Club
                 </span>
               </CardContent>
@@ -503,7 +503,9 @@ export default function H1ChessProfilePage() {
                     className="rounded object-cover"
                   />
                 </div>
-                <span className="text-gray-600">Ways to Improve Chess</span>
+                <span className="text-lg italic font-medium">
+                  Ways to Improve Chess
+                </span>
               </CardContent>
             </a>
           </Card>
