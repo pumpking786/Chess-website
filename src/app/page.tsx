@@ -64,8 +64,7 @@ const ShareModal = ({
   return (
     <div>
       <div
-        // In your main div, replace the background class:
-        className="min-h-screen bg-white flex flex-col items-center px-4 relative overflow-x-hidden"
+        className="fixed inset-0 bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center z-50"
         onClick={onClose}
       >
         <div
@@ -229,7 +228,7 @@ export default function H1ChessProfilePage() {
             className="object-cover"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">ChesswithPramit</h1>
+        <h1 className="text-gray-600 mb-4 text-lm italic">ChesswithPramit</h1>
         <p className="text-gray-600 mb-4 text-lm italic">
           I Teach Chess Online and On The Internet.
         </p>
