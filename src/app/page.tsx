@@ -90,7 +90,7 @@ const ShareModal = ({
               />
             </svg>
           </button>
-          <h2 className="text-[20px] font-semibold mb-4 text-center">
+          <h2 className="text-[20px] mb-4 text-center">
             Share with your friends
           </h2>
 
