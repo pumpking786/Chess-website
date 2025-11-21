@@ -228,7 +228,9 @@ export default function H1ChessProfilePage() {
             className="object-cover"
           />
         </div>
-        <h1 className="text-gray-600 mb-4 text-lm italic">ChesswithPramit</h1>
+        <h1 className="text-gray-600 mb-4 text-[30px] ">
+          <strong>ChesswithPramit</strong>
+        </h1>
         <p className="text-gray-600 mb-4 text-lm italic">
           I Teach Chess Online and On The Internet.
         </p>
