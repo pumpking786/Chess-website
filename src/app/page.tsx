@@ -126,7 +126,7 @@ const ShareModal = ({
                     height={30}
                   />
                 </div>
-                <span className="text-sm mt-1">{option.name}</span>
+                <span className="text-gray-800">{option.name}</span>
               </a>
             ))}
           </div>
