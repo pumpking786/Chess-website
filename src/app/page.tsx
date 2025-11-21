@@ -90,8 +90,8 @@ const ShareModal = ({
               />
             </svg>
           </button>
-          <h2 className="text-[20px] mb-4 text-center">
-            Share with your friends
+          <h2 className="text-gray-900 text-center">
+            <strong>Share with your friends</strong>
           </h2>
 
           {/* Linktree Profile Card */}
