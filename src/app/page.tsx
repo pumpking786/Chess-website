@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+// import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import { Card, CardContent } from "../../components/ui/card";
 import { Instagram, Youtube, Mail, Twitch, Facebook } from "lucide-react";
 import Image from "next/image";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 // Share Modal Component with TypeScript typing
 const ShareModal = ({
   isOpen,
