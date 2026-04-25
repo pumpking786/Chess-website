@@ -380,7 +380,7 @@ export default function H1ChessProfilePage() {
             </svg>
           </a>
           <span className="absolute bottom-10 left-1/2 -translate-x-1/2 text-xs bg-black text-white py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition duration-300">
-            TikTok
+            TikToks
           </span>
         </div> */}
       </div>
