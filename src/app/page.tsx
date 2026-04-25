@@ -6,7 +6,7 @@ import { Card, CardContent } from "../../components/ui/card";
 import { Instagram, Youtube, Mail, Twitch, Facebook } from "lucide-react";
 import Image from "next/image";
 // import emailjs from "@emailjs/browser";
-// Share Modal Component with TypeScript typing
+// Share Modal Component with TypeScript  typing
 const ShareModal = ({
   isOpen,
   onClose,
