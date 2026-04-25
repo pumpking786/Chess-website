@@ -1,11 +1,11 @@
 "use client";
 
-// import { useRef, useState, useEffect } from "react";
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
+// import { useState } from "react";
 import { Card, CardContent } from "../../components/ui/card";
 import { Instagram, Youtube, Mail, Twitch, Facebook } from "lucide-react";
 import Image from "next/image";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 // Share Modal Component with TypeScript  typing
 const ShareModal = ({
   isOpen,
@@ -178,47 +178,47 @@ const ShareModal = ({
 export default function H1ChessProfilePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const linktreeUrl: string = "https://chess-website-two.vercel.app/"; // Updated to the new URL
-  // const formRef = useRef<HTMLFormElement>(null);
-  // const [isSent, setIsSent] = useState(false);
-  // const [isLoading, setIsLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSent, setIsSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // // Reset form on mount
-  // useEffect(() => {
-  //   if (formRef.current) {
-  //     formRef.current.reset();
-  //   }
-  // }, []);
+  // Reset form on mount
+  useEffect(() => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  }, []);
 
-  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   const form = formRef.current;
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = formRef.current;
 
-  //   if (!form) return;
+    if (!form) return;
 
-  //   setIsLoading(true);
+    setIsLoading(true);
 
-  //   try {
-  //     const result = await emailjs.sendForm(
-  //       "service_05uyl7f", // ← Your Service ID
-  //       "template_ydy01hq", // ← Your Template ID
-  //       form,
-  //       "Zbd5fnAmqaeigNO2a" // ← Your Public Key
-  //     );
+    try {
+      const result = await emailjs.sendForm(
+        "service_05uyl7f", // ← Your Service ID
+        "template_ydy01hq", // ← Your Template ID
+        form,
+        "Zbd5fnAmqaeigNO2a" // ← Your Public Key
+      );
 
-  //     if (result.status === 200) {
-  //       setIsSent(true);
-  //       form.reset();
+      if (result.status === 200) {
+        setIsSent(true);
+        form.reset();
 
-  //       // Reset button after 2 seconds
-  //       setTimeout(() => setIsSent(false), 2000);
-  //     }
-  //   } catch (error) {
-  //     console.error("Failed to send email:", error);
-  //     alert("Failed to send message. Please try again.");
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
+        // Reset button after 2 seconds
+        setTimeout(() => setIsSent(false), 2000);
+      }
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-100 to-neutral-200 flex flex-col items-center px-4 relative overflow-x-hidden">
       {/* Top Icons - Centered Container */}
@@ -385,7 +385,7 @@ export default function H1ChessProfilePage() {
           </span>
         </div> */}
       </div>
-      {/* <form
+      <form
         ref={formRef}
         onSubmit={handleSubmit}
         className="space-y-2 max-w-lg mx-auto mb-6 
@@ -476,7 +476,7 @@ export default function H1ChessProfilePage() {
             ? "Message Sent ✓"
             : "Send Message"}
         </button>
-      </form> */}
+      </form>
       {/* Link Cards */}
       <div className="w-full max-w-md space-y-3 pb-10">
         <div className="block transition-transform duration-200 hover:-translate-y-1">
