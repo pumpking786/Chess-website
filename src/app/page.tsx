@@ -505,6 +505,29 @@ export default function H1ChessProfilePage() {
         <div className="block transition-transform duration-200 hover:-translate-y-1">
           <Card>
             <a
+              href="https://drive.google.com/file/d/1d8WSrsp8_28i2rHfs4NxRuHwXJzKG-B1/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <CardContent className="p-3 flex items-center gap-3">
+                <div className="relative w-[60px] h-[60px]">
+                  <Image
+                    src="/stopblundering.png"
+                    alt="Patreon"
+                    fill
+                    className="rounded object-cover"
+                  />
+                </div>
+                <span className="text-lg italic font-medium">
+                  <b>Stop Blundering The 7-Day Chess Reset</b>
+                </span>
+              </CardContent>
+            </a>
+          </Card>
+        </div>
+        <div className="block transition-transform duration-200 hover:-translate-y-1">
+          <Card>
+            <a
               href="https://www.pramitamatya.com.np/"
               target="_blank"
               rel="noopener noreferrer"
