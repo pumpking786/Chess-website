@@ -432,7 +432,7 @@ export default function H1ChessProfilePage() {
             htmlFor="number"
             className="block text-sm font-bold text-gray-700 mb-1"
           >
-            Whatsapp or Viber Number
+            Whatsapp Number
           </label>
           <input
             type="tel"
