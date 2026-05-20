@@ -280,7 +280,7 @@ export default function H1ChessProfilePage() {
         {/* Instagram */}
         <div className="relative group inline-block">
           <a
-            href="https://www.instagram.com/uneed1t/"
+            href="https://www.instagram.com/chesswithpramit/"
             target="_blank"
             rel="noopener noreferrer"
           >
